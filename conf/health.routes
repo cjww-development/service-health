@@ -1,0 +1,4 @@
+# Routes
+# This file defines all health routes for an application
+# ~~~~
+GET     /ping           com.cjwwdev.health.HealthController.ping()
