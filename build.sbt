@@ -35,7 +35,7 @@ lazy val scoverageSettings = Seq(
 
 val dependencies: Seq[ModuleID] = Seq(
   "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2"   % Test,
-  "org.mockito"             % "mockito-core"       % "2.18.3"  % Test
+  "org.mockito"             % "mockito-core"       % "2.22.0"  % Test
 )
 
 lazy val library = Project(appName, file("."))
