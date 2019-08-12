@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 CJWW Development
+ * Copyright 2019 CJWW Development
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,6 +21,6 @@ import play.api.inject.{Binding, Module}
 
 class HealthBindings extends Module {
   override def bindings(environment: Environment, configuration: Configuration): Seq[Binding[_]] = Seq(
-    bind(classOf[HealthController]).to(classOf[DefaultHealthController]).eagerly()
+    bind[HealthController].to[DefaultHealthController].eagerly(),
   )
 }
