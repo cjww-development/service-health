@@ -21,6 +21,6 @@ import play.api.inject.{Binding, Module}
 
 class HealthBindings extends Module {
   override def bindings(environment: Environment, configuration: Configuration): Seq[Binding[_]] = Seq(
-    bind(classOf[HealthController]).to(classOf[DefaultHealthController]).eagerly()
+    bind[HealthController].to[DefaultHealthController].eagerly(),
   )
 }

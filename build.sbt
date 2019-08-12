@@ -34,8 +34,8 @@ lazy val scoverageSettings = Seq(
 )
 
 val dependencies: Seq[ModuleID] = Seq(
-  "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2"   % Test,
-  "org.mockito"             % "mockito-core"       % "2.23.0"  % Test
+  "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.3"  % Test,
+  "org.mockito"             % "mockito-core"       % "3.0.0"  % Test
 )
 
 lazy val library = Project(appName, file("."))
@@ -43,7 +43,7 @@ lazy val library = Project(appName, file("."))
   .settings(scoverageSettings)
   .settings(
     version                                       :=  btVersion,
-    scalaVersion                                  :=  "2.12.7",
+    scalaVersion                                  :=  "2.13.0",
     organization                                  :=  "com.cjww-dev.libs",
     resolvers                                     ++= Seq(
       "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/",
